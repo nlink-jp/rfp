@@ -54,7 +54,7 @@ Decide which series the project belongs to:
 |--------|-------|
 | cli-series | Interactive CLI clients for external services (user-authenticated) |
 | chatops-series | Slack ChatOps automation and monitoring tools (bot-authenticated) |
-| cybersecurity-series | AI-augmented security tools (threat intel, IR, risk assessment) |
+| cybersecurity-series | Security investigation and IR tools (offline-first lookups + MCP, AI-assisted analysis) |
 | lab-series | Experimental projects under active development |
 | lite-series | Local-first LLM interaction and pipeline tools |
 | util-series | Pipe-friendly data transformation and processing CLIs |
