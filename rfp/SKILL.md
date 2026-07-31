@@ -58,7 +58,7 @@ Decide which series the project belongs to:
 | lab-series | Experimental projects under active development |
 | lite-series | Local-first LLM interaction and pipeline tools |
 | util-series | Pipe-friendly data transformation and processing CLIs |
-| skills-series | Claude Code Skills for development process automation |
+| skills-series | Claude Code Skills — packaged organizational workflows (development process, research, meeting minutes, security analysis) |
 
 If none fits, discuss whether a new series is warranted.
 
