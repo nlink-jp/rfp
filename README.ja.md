@@ -7,31 +7,25 @@ Phase 1 に対する完全性を検証したうえで、構造化された RFP �
 
 ## インストール
 
-### リリース zip から（推奨）
+[Releases](https://github.com/nlink-jp/rfp/releases) から
+`rfp-vX.Y.Z.zip` をダウンロードし、登録する:
 
-[Releases](https://github.com/nlink-jp/rfp/releases) から `rfp-vX.Y.Z.zip` を
-ダウンロードし、skills ディレクトリに展開します:
+- **アプリから**（Claude Desktop / claude.ai / モバイル）— スキル設定
+  （カスタマイズ → スキル）で zip を追加する。**この経路を推奨**。
+  スキルの保存場所が変わっても影響を受けない。
+- **Claude Code** — `unzip rfp-vX.Y.Z.zip -d ~/.claude/skills/`。
+  プロジェクト単位なら、プロジェクト内の `.claude/skills/` に展開する。
 
-```bash
-unzip rfp-vX.Y.Z.zip -d ~/.claude/skills/
-```
-
-プロジェクト単位でインストールする場合は、プロジェクト内の
-`.claude/skills/` に展開してください。
-
-claude.ai / Claude Desktop / モバイルでは、**Settings → Skills** から
-zip をそのままアップロードできます。
-
-### ソースから
+チェックアウトから:
 
 ```bash
-git clone https://github.com/nlink-jp/rfp.git
-cd rfp
 make install
 ```
 
-`make install DEST=/path/to/project/.claude/skills` で特定プロジェクトに
-インストールできます。`make uninstall` で削除します。
+リリース zip をビルドして**それを**展開するので、手元で動かすものと
+リリースが配るものが一致する。パッケージングの欠陥は利用者に届く前に
+手元のインストールを壊す。`make install DEST=/path/to/skills` で別の場所へ、
+`make uninstall` で削除。
 
 ## 使い方
 
